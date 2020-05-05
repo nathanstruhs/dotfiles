@@ -3,7 +3,7 @@ let mapleader = "\<Space>"
 inoremap jk <esc>
 inoremap kj <esc>
 
-nmap <leader>so :source $MYVIMRC<cr>
+nmap <leader>sv :source $MYVIMRC<cr>
 nmap <leader>ev :split ~/dotfiles/vim/.vimrc<cr>
 nmap <leader>- :split<cr>
 nmap <leader>\ :vsplit<cr>

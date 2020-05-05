@@ -16,6 +16,8 @@ call vundle#begin('~/dotfiles/vim/bundle')
   Plugin 'preservim/nerdcommenter'
   Plugin 'mhinz/vim-startify'
   Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+  Plugin 'ntpeters/vim-better-whitespace'
+  Plugin 'dense-analysis/ale'
 call vundle#end()
 filetype plugin indent on
 
