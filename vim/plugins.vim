@@ -15,7 +15,6 @@ call vundle#begin('~/dotfiles/vim/bundle')
   Plugin 'tpope/vim-endwise'
   Plugin 'preservim/nerdcommenter'
   Plugin 'mhinz/vim-startify'
-  Plugin 'dense-analysis/ale'
   Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 call vundle#end()
 filetype plugin indent on
