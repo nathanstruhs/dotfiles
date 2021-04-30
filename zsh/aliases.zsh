@@ -14,10 +14,5 @@ alias gd='git diff --color'
 alias gl='git log --stat --graph'
 alias remux='tmux source-file $HOME/dotfiles/tmux/tmux.conf'
 alias et='v $HOME/dotfiles/tmux/tmux.conf'
-alias be='bundle exec'
-
-# Work
-alias k='kubectl'
-alias kx='kubectx'
-alias cpns='cd $HOME/work/g5-call-tracking'
-
+alias mysql='mysql -u nathanstruhs -p'
+alias ghci='stack ghci'

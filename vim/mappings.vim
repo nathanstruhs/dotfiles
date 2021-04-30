@@ -21,3 +21,5 @@ nnoremap <leader>z :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 nnoremap <C-p> :All<cr>
 
+nnoremap <leader>p :Prettier<cr>
+

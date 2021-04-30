@@ -17,9 +17,11 @@ call vundle#begin('~/dotfiles/vim/bundle')
   Plugin 'mhinz/vim-startify'
   Plugin 'neoclide/coc.nvim', {'branch': 'release'}
   Plugin 'ntpeters/vim-better-whitespace'
-  Plugin 'dense-analysis/ale'
+  Plugin 'mattn/emmet-vim'
+  Plugin 'jiangmiao/auto-pairs'
+  Plugin 'posva/vim-vue'
+  Plugin 'sbdchd/neoformat'
 call vundle#end()
 filetype plugin indent on
 
 set rtp+=/usr/local/opt/fzf
-

@@ -17,14 +17,9 @@ ensure_tmux_is_running() {
 }
 ensure_tmux_is_running
 
-server() {
-  workdir="$HOME/work/"
-
-  case $(pwd) in
-    "${workdir}g5-call-tracking" ) rs 3001;;
-    *                            ) echo "Invalid directory. To update: \"v ~/dotfiles/zsh/functions.zsh\"";;
-  esac
-}
-
-rs() { rails s -p "$1" }
+# Work
+# relink() {
+    # npm uninstall vector-sequelize-model
+    # npm link ../vector-sequelize-model
+# }
 
