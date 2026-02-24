@@ -3,7 +3,7 @@ set viminfo+=n~/dotfiles/vim/viminfo
 
 " Colors
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-colorscheme alduin
+" colorscheme alduin
 highlight LineNr ctermfg=green
 highlight CursorLineNr ctermfg=LightBlue
 let g:better_whitespace_guicolor='deepskyblue'
