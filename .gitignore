@@ -1,5 +1,5 @@
-/vim/bundle/*
-/vim/viminfo
 /zsh/zsh_history
 /zsh/themes/*
-
+/zsh/.zcompdump
+/zsh/.zsh_sessions/
+/nvim/lazy-lock.json

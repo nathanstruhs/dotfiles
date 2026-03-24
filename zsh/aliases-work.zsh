@@ -1,4 +1,15 @@
 alias vector='cd ~/vector/'
+
+switch-env() {
+  local env="${1:?Usage: switch-env <local|dev|staging|qa|demo|prod>}"
+  local target=".env.${env}"
+  if [ ! -f "$target" ]; then
+    echo "No $target in $(basename "$PWD")"
+    return 1
+  fi
+  ln -sf "$target" .env
+  echo "$(basename "$PWD"): .env -> $target"
+}
 alias vsm='cd ~/vector/vector-sequelize-model'
 alias vaa='cd ~/vector/vector-application-api'
 alias vbw='cd ~/vector/vector-backend-worker'

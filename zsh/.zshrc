@@ -16,8 +16,6 @@ HISTFILE=$HOME/dotfiles/zsh/zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 
-MYVIMRC=$HOME/.config/nvim/.init.vim
-VIMINIT=$HOME/.config/nvim/.init.vim
 
 # Git autocomplete
 autoload -Uz compinit && compinit
@@ -54,3 +52,6 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 export PATH="$HOME/.local/bin:$PATH"
+
+# Vector environment safety guards
+source "/Users/nathanstruhs/vector/local-environment-orchestrator/shell/vector-env-guards.zsh"
