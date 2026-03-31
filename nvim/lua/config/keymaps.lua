@@ -14,6 +14,9 @@ vim.keymap.set("n", "<C-p>", function()
   require("conform").format()
 end, { desc = "Format document" })
 
+-- Exit terminal mode (matches jk escape pattern)
+vim.keymap.set("t", "jk", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
+
 -- Splits (from VS Code keybindings)
 vim.keymap.set("n", "<C-\\>", "<cmd>vsplit<CR>", { desc = "Vertical split" })
 vim.keymap.set("n", "<C-->", "<cmd>split<CR>", { desc = "Horizontal split" })

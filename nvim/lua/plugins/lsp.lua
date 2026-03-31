@@ -2,8 +2,14 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
+      inlay_hints = { enabled = false },
       servers = {
         graphql = {},
+        ts_ls = {
+          init_options = {
+            maxTsServerMemory = 8192,
+          },
+        },
       },
     },
   },

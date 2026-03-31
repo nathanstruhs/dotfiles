@@ -42,6 +42,9 @@ _tunnel-loop() {
 }
 
 tunnel-all() {
+  if [ -n "$TMUX" ]; then
+    tmux rename-window 'tunnels'
+  fi
   setopt local_options NO_MONITOR
   local -A ports=(dev 33060 staging 33061 prod 33062 qa 33063 demo 33064)
   local logdir="$HOME/.tunnel-logs"
